@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《鶯鶯》｜圓仔花意識拼貼劇坊</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-dark: #0a0a0a;
+  --primary-pink: #ff3388;
+  --primary-purple: #8833aa;
+  --light-text: #ffffff;
+  --sub-text: #cccccc;
+}
+body {
+  background-color: var(--bg-dark);
+  color: var(--light-text);
+  font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.8;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url('images/poster.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero h1 {
+  font-size: clamp(48px, 10vw, 80px);
+  color: var(--primary-pink);
+  text-shadow: 0 0 15px var(--primary-pink), 0 0 30px var(--primary-purple);
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+.hero .en-title {
+  font-size: clamp(18px, 3vw, 26px);
+  color: var(--light-text);
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+.hero .tagline {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--sub-text);
+  margin-bottom: 40px;
+}
+.coming-soon {
+  font-size: 20px;
+  color: var(--primary-pink);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.section {
+  margin-bottom: 80px;
+}
+.section h2 {
+  font-size: 28px;
+  color: var(--primary-pink);
+  margin-bottom: 24px;
+  border-left: 4px solid var(--primary-pink);
+  padding-left: 12px;
+}
+.card {
+  background-color: rgba(30,30,30,0.8);
+  border: 1px solid rgba(255,51,136,0.3);
+  padding: 24px;
+  border-radius: 10px;
+  color: var(--sub-text);
+}
+.video-box {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-box iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+@media (max-width:768px){
+  .video-box iframe { height: 240px; }
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:16px;
+}
+.photo-grid img {
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:8px;
+  border:1px solid rgba(255,51,136,0.3);
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:20px;
+}
+.team-card {
+  background-color: rgba(30,30,30,0.8);
+  border:1px solid rgba(255,51,136,0.3);
+  border-radius:10px;
+  overflow:hidden;
+}
+.team-card img {
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.team-card .info {
+  padding:20px;
+}
+.team-card h3 {
+  color: var(--primary-pink);
+  margin-bottom:6px;
+}
+.team-card .title {
+  color: var(--sub-text);
+  font-size:14px;
+  margin-bottom:10px;
+}
+.team-card .bio {
+  color:#aaa;
+  font-size:14px;
+}
+footer {
+  background-color:#0a0a0a;
+  padding:40px 20px;
+  text-align:center;
+  color:#555;
+  border-top:1px solid rgba(255,51,136,0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>鶯鶯</h1>
+  <div class="en-title">ING-ING</div>
+  <div class="tagline">現代劇場 × 歌仔戲 × 南管戲｜傳統和現代的女性內在之歌</div>
+  <div class="coming-soon">近期啟售 敬請期待</div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>演出介紹</h2>
+    <div class="card">
+      <p>《鶯鶯》聚焦一位年長流鶯的獨白故事，以獨角戲結合南管戲映照內心，呈現雅與俗、外在與內在的對話。寫給被時代遺忘的女性，寫給每一個渴望被看見的靈魂。</p>
+      <p>演出揉合歌仔戲的通俗、南管戲的溫婉細緻，重新定義「人盡可夫」，讓「流鶯」回到「人」的本質。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>宣傳影片</h2>
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/JvvmISUaU5M" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>演出劇照</h2>
+    <div class="photo-grid">
+      <img src="images/stage1.jpg">
+      <img src="images/stage2.jpg">
+      <img src="images/stage3.jpg">
+      <img src="images/stage4.jpg">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>演出資訊</h2>
+    <div class="card">
+      <h3 style="color: var(--primary-pink);">演出時間</h3>
+      <p>2026年10月23日－10月25日（共3場）</p>
+      <br>
+      <h3 style="color: var(--primary-pink);">演出地點</h3>
+      <p>基隆島嶼實驗劇場</p>
+      <br>
+      <h3 style="color: var(--primary-pink);">演出團隊</h3>
+      <p>圓仔花意識拼貼劇坊｜編導：黃宣諭｜主演：米雪、張春玲</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>主創團隊</h2>
+    <div class="team-grid">
+      <div class="team-card"><img src="images/team1.jpg">
+        <div class="info"><h3>黃宣諭</h3><div class="title">製作人、編劇、導演、舞監</div><div class="bio">圓仔花意識拼貼劇坊團長，國家文化藝術基金會青創會獲選。台南大學戲劇創作與應用研究所碩士。</div></div></div>
+      <div class="team-card"><img src="images/team2.jpg">
+        <div class="info"><h3>米雪（陳湣玲）</h3><div class="title">主演（飾 鶯鶯）</div><div class="bio">第26屆華人藝術薪傳獎得主，第34、35屆傳藝金曲獎最佳演員入圍。新協興歌劇團編導演全才。</div></div></div>
+      <div class="team-card"><img src="images/team3.jpg">
+        <div class="info"><h3>張春玲</h3><div class="title">主演（南管戲／內在鶯鶯）</div><div class="bio">文化部南管戲結業藝生，五權社區大學南管戲指導老師，長年推動南管戲傳承。</div></div></div>
+      <div class="team-card"><img src="images/team4.jpg">
+        <div class="info"><h3>薛衣珊</h3><div class="title">音樂統整、設計、主題曲創作</div><div class="bio">國立交通大學音樂研究所畢，美國百克里音樂院獎學金，專精劇場音樂設計。</div></div></div>
+      <div class="team-card"><img src="images/team5.jpg">
+        <div class="info"><h3>陳碧貞</h3><div class="title">傳統音樂顧問、彙編協力</div><div class="bio">國立勤益科技大學講師，深耕南管、歌仔戲音樂數十年，協助本劇曲牌整理。</div></div></div>
+      <div class="team-card"><img src="images/team6.jpg">
+        <div class="info"><h3>賴慧珈</h3><div class="title">整體視覺暨舞台設計</div><div class="bio">華梵大學工業設計系畢，專長展演策劃、視覺設計、空間美學統籌。</div></div></div>
+      <div class="team-card"><img src="images/team7.jpg">
+        <div class="info"><h3>黃冠鳴</h3><div class="title">燈光設計暨技術統合</div><div class="bio">國立台北藝術大學劇場設計畢，主修燈光設計。</div></div></div>
+      <div class="team-card"><img src="images/team8.jpg">
+        <div class="info"><h3>林玉媛</h3><div class="title">服裝、造型設計</div><div class="bio">國立台北藝術大學劇場設計畢，專職表演藝術服裝設計。</div></div></div>
+      <div class="team-card"><img src="images/team9.jpg">
+        <div class="info"><h3>許裕鴻</h3><div class="title">空間花藝裝置設計</div><div class="bio">圓仔花劇坊美學總監，經營皇品藝術花坊近三十年。</div></div></div>
+    </div>
+  </div>
+
+  <div class="section" id="購票">
+    <h2>購票資訊</h2>
+    <div class="card">
+      <h3 style="color: var(--primary-pink);">票價：800元</h3>
+      <p>早鳥8折｜基隆市民85折｜學生8折</p>
+      <br>
+      <p style="color:#ffc0cb; font-size:18px; font-weight:bold;">近期啟售 敬請期待</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>《鶯鶯》演出官方｜圓仔花意識拼貼劇坊 版權所有</p>
+</footer>
+
+</body>
+</html>
